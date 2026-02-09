@@ -42,4 +42,8 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <modules>
+    <module>rapid-auth-core</module>
+  </modules>
 </project>
