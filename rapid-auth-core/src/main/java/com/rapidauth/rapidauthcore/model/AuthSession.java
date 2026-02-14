@@ -10,4 +10,16 @@ public interface AuthSession {
     Instant getCreatedAt();
 
     default String getIpAddress() { return null; }
+
+    default String getUserAgent() {
+        return null;
+    }
+
+    default boolean isValid() {
+        return getExpiresAt().isAfter(Instant.now());
+    }
+
+    default boolean isExpired() {
+        return !isValid();
+    }
 }
