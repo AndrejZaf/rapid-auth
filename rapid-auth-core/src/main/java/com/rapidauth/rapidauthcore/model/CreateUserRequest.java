@@ -1,4 +1,4 @@
-package com.rapidauth.rapidauthcore.core;
+package com.rapidauth.rapidauthcore.model;
 
 import lombok.Builder;
 import lombok.Data;
